@@ -7,11 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TwoSum_1.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        
+        // nums = [2, 7, 11, 15], target = 9
+        NSArray *nums = @[@2, @7, @11, @15];
+        NSInteger target = 9;
+        NSArray *result = [TwoSum_1 twoSum:nums target:target];
+        NSLog(@"result = %@", result);
+        
     }
     return 0;
 }
